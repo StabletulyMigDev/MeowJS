@@ -6,7 +6,6 @@ import * as path from "path";
 function _cli() {
   const program = new Command();
   program.command('neko')
-  }
 }
 
 function _ui() {
@@ -23,7 +22,7 @@ function createWindow() {
   });
 
   // and load the index.html of the app.
-  mainWindow.loadFile(path.join(__dirname, "./worker/index.html"));
+  mainWindow.loadFile(path.join(__dirname, "./src/ui/index.html"));
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools();

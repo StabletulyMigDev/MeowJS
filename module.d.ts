@@ -1,5 +1,7 @@
 function neo() {
   // neo runner
+  var sh = require("shelljs");
+  sh.echo('started NeoRunner')
 }
 
 module.exports = {
@@ -10,4 +12,4 @@ module.exports = {
   App,
   Browser,
   fun,
-} 
+};
