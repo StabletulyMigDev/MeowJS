@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MeowJS runner</title>
-    <style>
-    body {
-    background: blue;
-    color: black;
-    }
-    </style>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
-  <body>
+  <body data-bs-theme="dark">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          MeowJS
+        </a>
+        <button type="button" class="btn btn-outline-danger" onclick="stop()">Stop</button>
+      </div>
+    </nav>
+
     <div>
-      <img src="./logo.svg" alt="MeowJS">
+      <iframe src="../../code.neko" frameborder="0"></iframe>
+      <p>This is a neko high demo! ( •̀ ω •́ )</p>
     </div>
-  </body>
+    <script>
+      var lang0 = ts
+      var lang1 = js
+
+      const { fs } = require("node:fs");
+      const { neko } = require("../neko");
+
+      function stop() {
+          window.close();
+      }
+    </script>
 </html>
